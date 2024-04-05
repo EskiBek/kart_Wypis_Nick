@@ -1,0 +1,27 @@
+﻿<Window x:Class="kart_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kart_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" FontSize="30">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label VerticalAlignment="Center" HorizontalAlignment="Center">Nick</Label>
+        <TextBox x:Name="nick" Grid.Column="1" Width="200" Height="50"></TextBox>
+        <Button Click="ShowButton" Grid.Column="2" Width="100" Height="50">Pokaz</Button>
+        <Label VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1">Stanowisko</Label>
+        <TextBlock x:Name="stanowiskoB" Grid.Row="1" Grid.Column="1" Height="70" Width="200"></TextBlock>
+        <Image x:Name="grafika_stanowisko" Grid.Row="2" Grid.Column="1" Width="200" Height="100"></Image>
+    </Grid>
+</Window>
